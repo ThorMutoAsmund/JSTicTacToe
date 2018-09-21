@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      .field {
+        width:100px;
+        height:100px;
+        background-color: #eee;
+        border: 1px solid #888;
+        display: table-cell;
+        text-align: center;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: sans-serif;        
+      }
+      .noSelect {
+        -webkit-user-select: none; /* Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+      }
+      .resultMessage {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: sans-serif;        
+        color: red;
+        position:absolute;
+        top: 150px
+      }
+      .fieldBreak {
+        margin:0;
+        padding:0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input id="youStartRadio" type="radio" checked="checked">You start</input>
+      <input id="computerStartsRadio"type="radio">Computer starts</input>
+      &nbsp;&nbsp;&nbsp;
+      <button id="restartButton">Restart</button>
+    </div>
+    <br/>
+    <div>
+      <span id="resultMessage" class="resultMessage noSelect"></span>
+      <div id="f0" class="field noSelect"></div>
+      <div id="f1" class="field noSelect"></div>
+      <div id="f2" class="field noSelect"></div>
+      <div  class="fieldBreak" />
+      <div id="f3" class="field noSelect"></div>
+      <div id="f4" class="field noSelect"></div>
+      <div id="f5" class="field noSelect"></div>
+      <div  class="fieldBreak" />
+      <div id="f6" class="field noSelect"></div>
+      <div id="f7" class="field noSelect"></div>
+      <div id="f8" class="field noSelect"></div>
+    </div>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</html>
